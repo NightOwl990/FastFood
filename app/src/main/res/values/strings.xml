@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FoodWebservice</string>
+
+    <string name="anhQuangCao1">https://alphamicropigmentation.com/wp-content/uploads/2017/05/pizza.jpg</string>
+    <string name="anhQuangCao2">https://i.pinimg.com/originals/eb/66/29/eb6629fb8195f0a09d606295942be294.jpg</string>
+    <string name="anhQuangCao3">https://radiosuckhoe.com/wp-content/uploads/2019/11/an-xuc-xich-co-beo-map-khong-1-cai-xuc-xich-bao-nhieu-calo-2.jpg</string>
+    <string name="anhQuangCao4">https://3.bp.blogspot.com/-Q7R5iwB0IkU/WrCHN1zSUSI/AAAAAAAAAT8/IWKblv3xTA0Nb8irMXQV1ZSrQMf7L4zRgCEwYBhgL/s1600/ly-giay-nong.jpg</string>
+    <string name="anhQuangCao5">https://3.bp.blogspot.com/-mYuvZJlXyGY/VzgDizCKsgI/AAAAAAAAByw/AozkloYnANMIEXgu3et7l8RlDkA7fr9IwCLcB/s1600/2016-05-15_120038.jpg</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="quen_mat_khau"><u>Quên mật khẩu</u></string>
+</resources>

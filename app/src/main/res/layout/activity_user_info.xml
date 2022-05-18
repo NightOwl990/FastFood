@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".UserInfoActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FF5722"
+        android:src="@drawable/fontavatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_icon"
+        android:src="@drawable/profile"
+        app:layout_constraintEnd_toEndOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView10"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_user_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0CFFFFFF"
+        android:padding="10dp"
+        android:src="@drawable/backicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView10"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Thông tin tài khoản"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppins"
+                android:text="Họ tên"
+                android:textColor="#000000" />
+
+            <EditText
+
+                android:id="@+id/edt_hoten_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Họ tên"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="#4A4B4D" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Ngày sinh"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_namsinh_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Ngày sinh"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Email"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_email_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Địa chỉ"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_diachi_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Địa chỉ"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Số điện thoại"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_sdt_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Số điện thoại"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="30dp"
+                    android:text="Sửa" />
+
+                <Button
+                    android:layout_marginEnd="30dp"
+                    android:id="@+id/btn_huy_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hủy"
+                    tools:ignore="MissingConstraints" />
+
+                <Button
+                    android:id="@+id/btn_update"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Lưu" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="Đổi mật khẩu"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="100dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Tài khoản"
+                android:textColor="#000000" />
+
+            <EditText
+                android:enabled="false"
+                android:id="@+id/edt_tk_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Tài khoản"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Mật khẩu cũ"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_old_mk_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Mật khẩu cũ"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Mật khẩu mới"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_new_mk_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Mật khẩu mới"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins"
+                android:text="Nhập lại mật khẩu mới"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/edt_re_mk_update"
+                android:layout_width="284dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:background="@drawable/textfeild"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Nhập lại mật khẩu mới"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btn_update_mk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Đổi mật khẩu" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
